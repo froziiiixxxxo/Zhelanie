@@ -34,9 +34,77 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-grid"><div class="footer-intro"><a class="brand" href="index.html"><span class="brand-name">Желание</span></a><p>Уютное кафе для событий, которые хочется прожить не спеша.</p></div><div><p class="footer-title">Навигация</p><ul class="footer-links"><li><a href="index.html">Главная</a></li><li><a href="menu.html">Меню</a></li><li><a href="gallery.html">Фото зала</a></li></ul></div><div><p class="footer-title">На связи</p><ul class="footer-links"><li><a href="tel:+79161319606">8-916-131-96-06</a></li><li><a href="mailto:Sobranieservis@mail.ru">Sobranieservis@mail.ru</a></li></ul></div><div><p class="footer-title">Социальные сети</p><div class="footer-socials"><a href="index.html#contacts" aria-label="ВКонтакте"><i class="fa-brands fa-vk" aria-hidden="true"></i></a><a href="https://t.me/kafejelanie" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a href="index.html#contacts" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></div></div></div><div class="container footer-bottom"><p>© 2026 Кафе «Желание»</p><p>Демо-версия сайта · Информация и цены приведены для примера</p></div></footer>
-  <div class="contact-modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true"><div class="modal-card"><button class="modal-close" type="button" data-modal-close aria-label="Закрыть окно"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><p class="kicker">Заявка на мероприятие · демо</p><h2 id="modal-title">Обсудим ваше мероприятие</h2><p>Заполните поля для демонстрации. Форма не отправляет данные и не сохраняет их.</p><form id="demo-lead-form" class="lead-form"><label>Ваше имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label><label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__" required></label><label>Тип мероприятия<select name="event" required><option value="">Выберите формат</option><option>Поминальный обед</option><option>Банкет</option><option>День рождения</option><option>Семейное мероприятие</option><option>Другое</option></select></label><label>Предполагаемая дата<input name="date" type="date"></label><button class="button button--gold" type="submit">Отправить</button><p class="form-notice" id="form-notice" aria-live="polite">Демо-форма: отправки данных нет.</p></form><div class="modal-contact-list"><a href="tel:+79161319606">Позвонить: 8-916-131-96-06</a><a href="mailto:Sobranieservis@mail.ru">Написать: Sobranieservis@mail.ru</a></div><button class="button button--outline" type="button" data-modal-close>Закрыть</button></div></div>
+  <!-- Модальное окно с формой заявки -->
+<div aria-hidden="true" aria-labelledby="modal-title" aria-modal="true" class="contact-modal" id="contact-modal" role="dialog">
+  <div class="modal-card">
+    <button aria-label="Закрыть окно" class="modal-close" data-modal-close type="button"><i aria-hidden="true" class="fa-solid fa-xmark"></i></button>
+    <p class="kicker">Заявка на мероприятие</p>
+    <h2 id="modal-title">Обсудим ваше мероприятие</h2>
+    <p>Заполните поля — мы перезвоним в течение 15 минут.</p>
+    <form class="lead-form" id="lead-form">
+      <label>Ваше имя
+        <input autocomplete="name" name="name" placeholder="Как к вам обращаться" required type="text"/>
+      </label>
+      <label>Телефон
+        <input autocomplete="tel" name="phone" placeholder="+7 ___ ___-__-__" required type="tel"/>
+      </label>
+      <label>Тип мероприятия
+        <select name="event" required>
+          <option value="">Выберите формат</option>
+          <option value="Поминальный обед">Поминальный обед</option>
+          <option value="Банкет">Банкет</option>
+          <option value="День рождения">День рождения</option>
+          <option value="Семейное мероприятие">Семейное мероприятие</option>
+          <option value="Другое">Другое</option>
+        </select>
+      </label>
+      <label>Предполагаемая дата
+        <input name="date" type="date"/>
+      </label>
+      <button class="button button--gold" type="submit">Отправить</button>
+      <p aria-live="polite" class="form-notice" id="form-notice"></p>
+    </form>
+    <div class="modal-contact-list">
+      <a href="tel:+79161319606">Позвонить: 8-916-131-96-06</a>
+      <a href="mailto:Sobranieservis@mail.ru">Написать: Sobranieservis@mail.ru</a>
+    </div>
+    <button class="button button--outline" data-modal-close type="button">Закрыть</button>
+  </div>
+</div>
   <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" aria-hidden="true"><figure class="lightbox-figure"><button class="lightbox-close" type="button" aria-label="Закрыть просмотр"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><button class="lightbox-prev" type="button" aria-label="Предыдущее фото"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button><img class="lightbox-image" src="" alt=""><button class="lightbox-next" type="button" aria-label="Следующее фото"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button><figcaption class="lightbox-caption" id="lightbox-caption"><span></span><span aria-live="polite"></span></figcaption></figure></div>
   <a class="whatsapp-float" href="https://wa.me/79161319606" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><div class="mobile-booking"><button class="button button--gold" type="button" data-modal-open>Забронировать дату</button></div>
   <script src="assets/js/main.js"></script><script src="assets/js/gallery.js"></script>
+
+<script>
+(() => {
+  const form = document.getElementById('lead-form');
+  if (!form || form.dataset.submitHandlerInstalled === 'true') return;
+  form.dataset.submitHandlerInstalled = 'true';
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const notice = form.querySelector('#form-notice');
+    const submitButton = form.querySelector('button[type="submit"]');
+    if (submitButton) submitButton.disabled = true;
+    if (notice) notice.textContent = 'Отправляем...';
+
+    try {
+      const response = await fetch('https://zhelanieform.pogreckijanton9.workers.dev/', {
+        method: 'POST',
+        body: new FormData(form)
+      });
+      if (!response.ok) throw new Error('Request failed: ' + response.status);
+      if (notice) notice.textContent = 'Спасибо! Заявка отправлена.';
+      form.reset();
+    } catch (error) {
+      if (notice) notice.textContent = 'Не удалось отправить заявку. Попробуйте ещё раз или позвоните нам.';
+      console.error('Lead form submission failed:', error);
+    } finally {
+      if (submitButton) submitButton.disabled = false;
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
